@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.
+    7.0/css/font-awesome.min.css">
+    <!--google font for netsuzu-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <!--google font for boxes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--google font for about the boxes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+     <!--google font for heading-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
+    <link ref="stylesheet" href="css.style/css">
+    <style>
+        .back{
+                display: flex;
+                font-family: 'Courier New', Courier, monospace;
+
+
+        }
+      
+         .navbar::before{
+                 content:"";
+                 background-image: url(background.jpg);
+                 position: absolute;
+                 height: 100vh;
+                 width: 100vw;
+                 z-index:-1;
+                 background-attachment: fixed;
+                 background-repeat: no-repeat;
+                 background-size: cover; 
+                 opacity: 0.99;
+                 filter:contrast(148%);
+                 background-size: cover;
+                
+                   
+         }
+        
+            
+         
+        .navbar{
+              display: flex;
+              
+              color: rgb(252, 7, 7);
+              padding-left:10px ;
+              
+        }
+        .logo-set{
+            font-size: 2.5em;
+            font-family: initial;
+           
+           
+            width: auto;
+            height: 10vh;
+            display: flex;
+            align-content: center;
+            padding: 10px 2px 2px 50px;
+            
+        }
+        .logo{
+            font-family: 'Lobster Two', sans-serif; 
+            
+             display: flex;
+             flex-direction: column-reverse;
+             justify-content: center;
+            
+             align-content: flex-start;
+            
+             
+
+        }
+        .lang{
+            border: 2px solid green;
+            margin: 2px;
+            height: auto;
+            width: auto;
+            font-style: italic;
+            flex-wrap: wrap;
+        }
+       
+        .mus{
+            
+             
+             padding-left: 250px;
+             justify-content: space-between;
+             font-family: 'Courier New', Courier, monospace;
+             display: flex;
+            
+            
+             
+
+        }
+        #book{
+              align-items:center;
+              text-align: right;
+              margin: 2px;
+              border-radius: 6px;
+              border: 2px solid rgb(243, 244, 241);
+              padding: 5px 2px 0px;
+              background-color: rgba(245, 245, 220, 0.358);
+              font-size: 1.5rem;
+              
+        }
+        .ramu{
+               align-items:center;
+               text-align: right;
+              margin: 2px;
+              border-radius: 6px;
+              border: 2px solid rgb(173, 39, 39);
+              padding: 5px 2px 0px;
+             background-color: brown;
+             color: aliceblue;
+             font-size: 1.5rem;
+             list-style: none;
+             
+        }
+       .nanu{
+              font-size: medium;
+              
+
+       }
+        .about-us{
+               font-family: initial;
+               font-family: 'Kalnia', serif; 
+               color: #fff;
+               text-align: center;
+               justify-content: center;
+               padding-top: 190px;
+               padding-bottom: 30px;
+               text-align: center;
+               align-items: center;
+        }
+        .ram{
+              align-items:center;
+              margin: 2px;
+              border-radius: 6px;
+              border: 2px solid rgb(173, 39, 39);
+              padding: 5px 2px 0px;
+             background-color: brown;
+             color: rgb(255, 255, 255);
+             font-size: 1.5rem;
+             list-style: none;
+             text-align: center;
+             align-items: center;
+        }
+        .unlimitd{
+               font-size: 3.0rem;
+            
+                
+
+        }
+        .un{
+                font-size: 2.0rem;
+
+
+        }
+       
+        .start{
+              background-color: #0b03035d;
+             padding-right: 22px;
+             border-radius: 4px;
+            font-size: 1.5rem;
+             color: #fff;
+             margin: 4px;
+              border-radius: 6px;
+              border: 2px solid rgb(243, 239, 239);
+              padding:10px;
+              width: 30vw;
+         }
+        
+         .boxes{
+               background-color: black;
+               height: 100vh;
+               width:100vw;
+               color: #fff;
+               display: flex;
+               justify-content: center;
+               font-family: 'Kalnia', serif;
+         }         
+         .box1{
+             height: auto;
+             width:50vw;
+             padding-left:20px;
+             color:#fff;
+              
+              padding-top: 150px;
+         }
+         .san{
+                  font-size: 2.0em;
+
+         }
+         .nas{
+               font-size: 1.5em;
+
+
+         }
+         .box2  img{
+            height: 60vh;
+            width:40vw;
+            padding-top: 100px;
+            color:#fff;
+           
+         }
+         .cards{
+               background-color: black;
+               height: 100vh;
+               width:100vw;
+               color: #fff;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-family: 'Kalnia', serif;
+         }         
+         .card2{
+             height: auto;
+             width:50vw;
+             padding-left:30px;
+             color:#fff;
+             padding-right: 8px;
+            
+             
+         }
+         .sam{
+                  font-size: 2.0em;
+
+         }
+         .mas{
+               font-size: 1.5em;
+
+
+         }
+         .card1  img{
+            height: 80vh;
+            width:40vw;
+           
+            color:#fff;
+            padding-left: 50px;
+            border-radius: 20px;
+            border: 2px solid rgb(9, 9, 9);
+           
+         }
+         .dices{
+               background-color: black;
+               height: 100vh;
+               width:100vw;
+               color: #fff;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-family: 'Kalnia', serif;
+         }         
+         .dice2{
+             height: auto;
+             width:50vw;
+             padding-left:20px;
+             color:#fff;
+              align-items: center;
+              
+
+         }
+         .sa{
+                  font-size: 2.0em;
+
+         }
+         .ma{
+               font-size: 1.5em;
+
+
+         }
+         .dice1  img{
+            height:auto;
+            width:50vw;
+            border-radius: 22px;
+            color:#fff;
+            border: 2px solid black;
+
+           
+         }
+         /*last page footer*/
+         .last{
+               background-color: black;
+               align-items: center;
+               justify-content: center;
+                
+                padding-top: 40px;
+                padding-bottom: 60px;
+                width: 100vw;
+                height: 30vh;
+                text-align: center;
+                align-items: center;
+
+         }
+         .las{
+              background-color: #0b03035d;
+             padding-right: 22px;
+             border-radius: 4px;
+            font-size: 1.5rem;
+             color: #fff;
+             margin: 4px;
+              border-radius: 10px;
+              border: 2px solid rgb(243, 239, 239);
+              padding:10px;
+              width: 30vw;
+              
+         }
+         .ra{
+            
+              margin: 2px;
+              border-radius: 6px;
+              border: 2px solid rgb(173, 39, 39);
+              padding: 5px 2px 0px;
+             background-color: brown;
+             color: rgb(255, 255, 255);
+             font-size: 1.5rem;
+             list-style: none;
+             
+        }
+        .re{
+           color:#fff;
+           font-size: 1.5rem;
+          
+
+        }
+        .container{ 
+            background-color: black;
+            list-style: none;
+            font-family: initial;
+            cursor: pointer; 
+            flex-wrap: wrap;
+            color:#fff;
+            box-sizing: border-box;
+            display: flex;
+            width: 100vw;
+            height: 50vh;
+            font-size: 1.5rem;
+            
+            
+
+        }
+       /* .gamee{ 
+            background-color: black;
+            list-style: none;
+            font-family: initial;
+           
+            border: 2px solid red;
+            flex-wrap: wrap;
+            color:#fff;
+
+        }*/
+        .box10{
+           
+            width: 30vw;
+            padding-left: 10px;
+
+
+
+        }
+        .box11{
+          
+            width: 30vw;
+            text-align: center;
+            align-items: center;
+        
+
+           
+        }
+        .box12{
+            
+            width: 30vw;
+            text-align: center;
+            align-items: center;
+
+        }
+        .container li{
+
+                padding: 2px;
+
+        }
+        .que{
+             padding: 2px;
+             margin: 2px;
+             border-bottom: 2px solid white;
+        
+
+        }
+        
+        .copy{
+               align-items: center;
+               text-align: center;
+               padding: 8px;
+               background-color: black;
+               color: #f4eded;
+            
+        }
+        @media screen and(min-width:450px) and(max-width:800px){
+            .cards{
+                         background-color: rgb(107, 83, 51);
+                          display: flex;
+            }
+        }
+        @media screen and(min-width:450px) and(max-width:800px){
+            .start{
+                         background-color: rgb(107, 83, 51);
+                         
+            }
+        }
+        @media screen and(min-width:450px) and(max-width:800px){
+            #id{
+                         background-color: rgb(107, 83, 51);
+                          display: flex;
+            }
+        }
+        @media screen and(min-width:450px) and(max-width:500px){
+            .nanu{
+                        
+                          margin: auto;
+            }
+        }
+        @media screen and(min-width:450px) and(max-width:800px){
+            .about-us{
+                         background-color: rgb(107, 83, 51);
+                         
+            }
+        }
+
+      
+        @media screen and(min-width:450px) and(max-width:800px){
+            .mus{
+                        
+                          display: flex;
+            }
+        }
+        @media screen and(min-width:450px) and(max-width:500px){
+            .logo-set{
+                          font-size: medium;
+            }
+        }
+
+       @media screen and(min-width:450px) and(max-width:500px){
+            .logo {
+                          font-size: medium;
+            }
+        }
+        @media screen and(min-width:350px) and(max-width:800px){
+            .navbar{
+                         font-size: medium;
+            }
+        }
+        @media screen and(min-width:350px) and(max-width:800px){
+            .back{
+                        background-color: chartreuse;
+                          display: flex;
+            }
+        }
+     
+            
+        @media only screen and(min-width:500px) and(max-width:800px){
+            .container{
+                          display: flex;
+            }
+            
+         }
+          
+    
+
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+       
+    <nav class="navbar">
+        <div class="logo-set">
+        <h1 class="logo">Netsuzu</h1>
+        </div>
+            <span class="mus">
+            <select id="book">
+            <option >Englishअ </option>
+            <option>English</option>      
+            <option>Hindi</option>
+            </select>
+            <button class="ramu">
+            <li>Sign In</li>
+            </button> 
+            </span>
+            
+        </nav>
+        <div class="about-us">
+           <h1 class="unlimitd"> 
+           Unlimited movies, Tv shows and more
+           </h1>
+           <h2 class="un">Watch anywhere cancel anytime</h2>
+           <h3>Ready to watch? Enter your email to create or restart your membership</h3>
+           <input  class="start" type="text" id="my text" placeholder="Email address">
+           <button class="ram">
+            <li>Get Started  ></li>
+           </button>
+        
+        </div>
+       <!--page1-->
+        <div class="boxes">
+            <div class="box1">
+             <h1 class="san" >Enjoy on your Tv</h1>
+             <h2 class="nas">Watch on smart tvs, Playstation, Xbox,<br>
+                Chromecost, Apple Tv, Blu-ray players and more.</h2>
+
+            </div>
+            <div class="box2">
+             <img src="e.jpg" alt="">
+             <video data-uia="data-uia="nmhp-card-animation-asset-video" autoplay playsinline muted loop>
+             <source src=".html\net_files\Tera_yaar_hoon_mai_❤️___Doraemon_Fanzone
+             ___Arijit_Singh_&_Rochak_Kohli___Doraemon_song_hd_2021_Y2bs.Com.webm    " type="video4pm">
+            </video>
+            </div>
+        </div>
+        </div>
+        <!--page 2-->
+            <div class="cards">
+                <div class="card1">
+                 <img src="w.jpg" alt="">
+                </div>
+                <div class="card2">
+                <h1 class="sam"> Download your shows to watch offline</h1>
+                <h2 class="mas">Save your favourites easily and always
+                    have something to watch </h2>
+
+                </div>
+            </div>
+            <!--page3-->
+            <div class="dices">
+             <div class="dice1">
+              <img src="cartoon.png" alt="">
+             </div>
+             <div class="dice2">
+            <h1 class="sa">Create profiles for kids</h1>
+            <h2 class="ma"> Send children on adventure with their favourite <br>
+            characters in a space made just for them-free with<br>
+            your membership.</h2>
+
+             </div>
+            </div>
+        </div>
+      <!--page4-->
+        <header class="last">
+            <h3 class="re">Ready to watch? Enter your email to create or restart your membership</h3>
+            <input  class="las" type="text" id="my text" placeholder="Email address">
+            <button class="ra">
+             <li>Get Started  ></li>
+            </button>  
+        </header>
+      <!--page4-->
+        <div class="container">
+          
+            <div class="box10">
+            <h4 class="que">Questions? call 000-741-620-1694</h4> 
+            
+            <li>FAQ</li>
+            <li>Investor Relations</li>
+            <li>Privacy</li>
+            <li>speed test</li>
+            <select>
+                <option>SELECT LANG</option>
+               <option>English</option>
+               <option>Hindi</option>
+            </select>
+            <h2>Netsuzu India</h2>
+            </div>
+            <div class="box11">
+             <li>help centre</li>
+             <li>jobs</li>
+             <li>Cookie Preference</li>
+             <li>Legal Notices</li>
+            </div>
+            <div class="box12">
+                <li>Media Centre</li>
+                <li>Term of Use</li>
+                <li>ontact Us</li>
+            </div>
+           
+        </div>
+        <div class="copy">
+            <p>Copyright &copyright; 2004-2025.
+                All rights Reserved. All other tradermarks
+                and copyrights are the property of their respective holders.
+            </p>
+        </div>
+    </form>
+</body>
+</html>
